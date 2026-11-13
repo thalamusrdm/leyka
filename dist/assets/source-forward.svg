@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="CtA_forward" data-name="CtA forward" width="88" height="88" viewBox="0 0 88 88">
+  <circle id="outer_circle" data-name="outer circle" cx="44" cy="44" r="44" fill="rgba(255,255,255,0.15)"></circle>
+  <circle id="inner_circle" data-name="inner circle" cx="30.5" cy="30.5" r="30.5" transform="translate(14 14)" fill="#fff"></circle>
+  <path id="Symbol_Arrow_right" d="M6.41,15.45H22.44l-4.53-4.3a.927.927,0,1,1,1.28-1.34l6.18,5.87a.939.939,0,0,1,.29.67.9.9,0,0,1-.29.67l-6.18,5.87a.927.927,0,1,1-1.28-1.34l4.53-4.3H6.41a.9.9,0,1,1,0-1.8Z" transform="translate(28.414 28.15)" fill="#222"></path>
+</svg>

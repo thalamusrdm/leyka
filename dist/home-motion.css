@@ -1,0 +1,5 @@
+/* Homepage-only scroll effects. Text stays readable while original media moves. */
+.reference-hero>img{transform:scale(var(--home-hero-scale,1));transform-origin:40% 45%;will-change:transform}
+.home-quality{position:relative;isolation:isolate;overflow:hidden;background-image:none}
+.home-quality::before{content:"";position:absolute;inset:-32px -64px;z-index:-1;background:#151515 url('/assets/brand-quality.jpg') center/cover no-repeat;transform:translate3d(var(--home-quality-x,0px),0,0);will-change:transform}
+@media(prefers-reduced-motion:reduce){.reference-hero>img,.home-quality::before{transform:none;will-change:auto}}

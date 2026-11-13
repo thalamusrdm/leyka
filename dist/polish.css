@@ -1,0 +1,31 @@
+
+:root{--muted:#595959;--anchor-gap:156px}
+html{scroll-padding-top:var(--anchor-gap);scrollbar-gutter:stable}
+[id]{scroll-margin-top:0}
+h1,h2,h3{text-wrap:balance;letter-spacing:-.02em}
+.leica-inner-page .page-intro h1{font-size:clamp(40px,5vw,80px);letter-spacing:-.02em;line-height:1.15}
+.reference-hero-copy{text-align:right}
+.leica-header a,.leica-header button{min-height:44px}.leica-nav-left button,.leica-nav-right button,.leica-nav-right>a{display:inline-flex;align-items:center}
+.leica-header .leica-round-logo{display:block;min-height:0}
+
+.leica-header .leica-eyecare img{max-width:none}
+.leica-language button{min-width:44px;justify-content:center}
+.leica-menu-close,.leica-mobile-close{min-width:44px;min-height:44px;display:grid;place-items:center}
+.leica-menu-group a{min-height:44px;display:flex;align-items:center;justify-content:center}
+.leica-social a{width:44px;height:44px}
+.leica-footer a:hover,.leica-menu-group a:hover{text-decoration:underline;text-underline-offset:.22em}
+.leica-footer-legal a{min-height:44px;display:inline-flex;align-items:center}
+.skip{z-index:120}
+.leica-overlay :focus-visible,.leica-mobile-nav :focus-visible,.leica-header :focus-visible{outline-color:#fff;outline-offset:5px}
+input,textarea{caret-color:var(--red)}
+.reference-button,.button,.text-link{min-height:44px}
+.reference-button:active,.button:active{transform:translateY(1px)}
+.store-card h2{letter-spacing:-.02em;overflow-wrap:anywhere}
+.direct-contact a{overflow-wrap:anywhere}
+@media(max-width:991px){:root{--anchor-gap:86px}.leica-header-tools{top:13px}.leica-header .leica-menu-toggle{top:13px;width:44px;height:44px}.leica-mobile-nav{padding-top:60px}.reference-hero-copy{text-align:right}.leica-mobile-nav .leica-menu-group{margin-bottom:30px}}
+@media(max-width:600px){.reference-intro-copy{padding:60px 6%}.reference-intro-copy p{max-width:65ch}.leica-mobile-nav .leica-menu-group a{font-size:20px}.leica-mobile-nav .leica-menu-group h2{font-size:21px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.reference-button,.text-link{transition:none}.button:hover,.button:active,.reference-button:active{transform:none}}
+
+@media(max-width:991px){.reference-hero-copy{left:auto;right:20px;top:auto;bottom:36px;width:auto;max-width:calc(100% - 40px);background:rgba(15,15,15,.78);padding:14px 18px;transform:none}}
+
+.complete-product-hero{background:#d3d5d4}.small-note{color:var(--muted)}input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}

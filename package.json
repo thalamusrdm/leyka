@@ -1,0 +1,11 @@
+{
+  "name": "leica-eyecare-israel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build": "node src/generate.mjs",
+    "test": "node scripts/check.mjs"
+  }
+}

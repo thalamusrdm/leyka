@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leica-eyecare-israel.idor.chatgpt.site/sitemap.xml
