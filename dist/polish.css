@@ -29,3 +29,7 @@ input,textarea{caret-color:var(--red)}
 @media(max-width:991px){.reference-hero-copy{left:auto;right:20px;top:auto;bottom:36px;width:auto;max-width:calc(100% - 40px);background:rgba(15,15,15,.78);padding:14px 18px;transform:none}}
 
 .complete-product-hero{background:#d3d5d4}.small-note{color:var(--muted)}input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
+
+/* Hebrew navigation and consistent store navigation states. */
+.leica-desktop-nav{direction:rtl}
+.store-card a,.store-card a:visited,.store-card a:hover,.store-card a:focus{color:var(--ink)}

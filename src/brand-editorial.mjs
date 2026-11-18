@@ -1,7 +1,7 @@
 // Presentation only. The complete approved Hebrew copy remains in content.mjs.
 const chapter=(number,label)=>'<span class="story-chapter"><span dir="ltr">'+number+'</span><span>'+label+'</span></span>';
 export function composeBrandEditorial(html,kind){
- const links=kind==='brand'?[['expertise-intro','המומחיות'],['history','המורשת'],['production','המפעלים'],['expertise','תכנון ואיכות'],['brand-israel','בישראל']]:[['research','פיתוח'],['manufacturing','ייצור'],['materials','חומר וגימור'],['inspection','בקרת איכות'],['israel-service','שירות בישראל']];
+ const links=kind==='brand'?[['expertise-intro','המומחיות'],['history','המורשת'],['production','המפעלים'],['expertise','תכנון ואיכות'],['brand-israel','בישראל']]:[['research','פיתוח'],['manufacturing','ייצור'],['materials','חומר וגימור'],['engraving','חריטה'],['inspection','בקרת איכות'],['israel-service','שירות בישראל']];
  const label=kind==='brand'?'סיפור המותג':'אודות ואיכות';
  const nav='<nav class="story-index" aria-label="בעמוד '+label+'"><span>'+label+'</span>'+links.map(([id,text])=>'<a href="#'+id+'">'+text+'</a>').join('')+'</nav>';
  html=html.replace('</section>','</section>'+nav);

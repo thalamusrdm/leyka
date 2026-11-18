@@ -8,14 +8,14 @@ export function composeProductEditorial(html,product,details){
  if(details.digital)links.push(['digital','MONOVID DIGITAL']);
  if(details.esm)links.push(['esm','חומר ESM']);
  if(details.lifestyle)links.push(['lifestyle','שימושים ייעודיים']);
- links.push(['categories','קטגוריות'],['options','אפשרויות'],['israel','התאמה בישראל']);
+ links.push(['categories','קטגוריות'],['options','תכונות'],['israel','התאמה בישראל']);
  const nav='<nav class="editorial-index" aria-label="בעמוד '+esc(product.name)+'"><span dir="ltr">'+esc(product.name)+'®</span>'+links.map(([id,label])=>'<a href="#'+id+'">'+esc(label)+(id==='israel'?' <span aria-hidden="true">↙</span>':'')+'</a>').join('')+'</nav>';
  html=html.replace('</section>','</section>'+nav);
  const chapters=[['campaign','נקודת המבט'],['overview',product.type]];
  if(details.esm)chapters.push(['esm','חומר העדשה']);
  if(details.digital)chapters.push(['digital','תמיכה לקרוב']);
  if(details.lifestyle)chapters.push(['lifestyle','שימושים ייעודיים']);
- chapters.push(['categories','רמות התכנון'],['options','אפשרויות'],['quality','איכות Leica'],['israel','בישראל']);
+ chapters.push(['categories','רמות התכנון'],['options','תכונות'],['quality','איכות Leica'],['israel','בישראל']);
  for(const [index,[id,label]] of chapters.entries()){
   const marker='<span class="editorial-chapter"><span dir="ltr">'+String(index+1).padStart(2,'0')+'</span><span>'+esc(label)+'</span></span>';
   if(id==='campaign')html=html.replace('<div><h2>'+esc(details.campaign.title),'<div>'+marker+'<h2>'+esc(details.campaign.title));
